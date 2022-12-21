@@ -75,7 +75,7 @@
 
     const todoslosanos = inventors.reduce(function(total, inventor){
       return total + (inventor.passed - inventor.year);
-    }, 0);
+    }, 0); //puedo colocar que total = a 0 en la funcion, y borrar el 0 inicializador que esta al final de la funcion (que lo que hace es colocar en 0 el acumulador 'total')
     console.log(todoslosanos);
     // 5. Sort the inventors by years lived
 
@@ -88,6 +88,13 @@
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+        //ESTE CODIGO ABAJO SE USA EN EL LINK DE ARRIBA :)
+
+  /*  const categorias = document.querySelector('.mw-category');
+    const enlacesarray = Array.from(categorias.querySelectorAll('a'));
+    const soloconde = enlacesarray.map((enlaces) => enlaces.textContent)
+                .filter((losenlaces) => losenlaces.includes('de'));
+    console.table(soloconde); */
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
